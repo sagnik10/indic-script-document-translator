@@ -1,0 +1,15 @@
+# Kaggle normally already provides a CUDA-enabled PyTorch build. This lower
+# bound records the runtime contract without forcing a reinstall when satisfied.
+torch>=2.7
+transformers>=5.12.1,<5.17
+surya-ocr==0.22.1
+opencv-python-headless==4.11.0.86
+pillow>=10.2,<11
+numpy>=1.26,<3
+packaging>=24,<27
+sentencepiece>=0.2,<1
+protobuf>=5,<7
+pytesseract>=0.3.13,<1
+streamlit>=1.62,<2
+python-docx>=1.1,<2
+pymupdf>=1.24,<2

@@ -1,0 +1,17 @@
+# Windows UI/runtime dependencies. PyTorch is already installed in the project
+# virtual environment; install a CUDA build separately if GPU inference is wanted.
+torch>=2.13,<2.14
+torchvision>=0.28,<0.29
+# Tested loader range. Transformers 5 has changed tied-weight/meta handling
+# across minor releases, so do not float to an unverified future minor.
+transformers>=5.12.1,<5.17
+opencv-python>=4.10,<5
+pillow>=10.2,<12
+numpy>=1.26,<3
+packaging>=24,<27
+sentencepiece>=0.2,<1
+protobuf>=5,<7
+pytesseract>=0.3.13,<1
+streamlit>=1.62,<2
+python-docx>=1.1,<2
+pymupdf>=1.24,<2

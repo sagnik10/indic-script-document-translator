@@ -1,0 +1,6 @@
+accelerate>=1.1,<2
+Pillow>=10.3,<13
+torch>=2.2
+transformers>=4.45,<5
+safetensors>=0.4,<1
+sentencepiece>=0.2,<1

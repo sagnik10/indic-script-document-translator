@@ -1,0 +1,5 @@
+[server]
+# Transformers exposes many lazily imported vision modules. Disabling source
+# watching prevents Streamlit from importing every optional model module while
+# scanning paths; this app is restarted explicitly after code changes.
+fileWatcherType = "none"

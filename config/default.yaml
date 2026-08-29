@@ -1,0 +1,105 @@
+MAX_UPLOAD_SIZE: 52428800
+OCR_DPI: 300
+OCR_ENGINE: tesseract
+OCR_LANGUAGES:
+  - eng
+  - hin
+  - pan
+  - ben
+  - mar
+  - guj
+  - tam
+  - tel
+  - kan
+  - mal
+  - ori
+OCR_LOW_CONFIDENCE_THRESHOLD: 0.65
+HANDWRITING_CONFIDENCE_THRESHOLD: 0.55
+OCR_UPSCALE_FACTOR: 2.0
+PRINTED_OCR_PSM_CANDIDATES:
+  - 6
+  - 11
+RECONSTRUCTION_ACCEPT_THRESHOLD: 0.82
+AUTO_RECONSTRUCT_THRESHOLD: 0.90
+REVIEW_RECONSTRUCT_THRESHOLD: 0.70
+MIN_CONTEXT_QUALITY: 0.80
+MIN_VALIDATED_CONTEXT_TOKENS: 3
+MAX_RECONSTRUCTION_SPAN_TOKENS: 3
+DEFAULT_TARGET_LANGUAGE: en
+MIN_OUTPUT_FONT_SIZE: 6.0
+TRANSLATION_BATCH_SIZE: 8
+TEMP_DIRECTORY: .runtime/tmp
+OUTPUT_DIRECTORY: outputs
+DEVICE: auto
+LOG_LEVEL: INFO
+DEBUG: false
+LOG_DOCUMENT_TEXT: false
+TRANSLATION_PROVIDER: huggingface
+TRANSLATION_MODEL: facebook/nllb-200-distilled-600M
+RECONSTRUCTION_MODEL: null
+HF_LOCAL_FILES_ONLY: false
+NATIVE_TEXT_MIN_CHARACTERS: 20
+MAX_MODEL_INPUT_CHARACTERS: 1200
+ENABLE_SAFE_BLOCK_EXPANSION: true
+MAX_BLOCK_EXPANSION_POINTS: 36.0
+TESSERACT_CMD: null
+TESSDATA_DIRECTORY: .runtime/tessdata
+PREPROCESSING_PROFILE: auto
+RECONSTRUCTION_MODE: clean_rebuild
+PRESERVE_UNREADABLE_HANDWRITING_AS_IMAGE: true
+HANDWRITING_ENGINE: trocr
+HANDWRITING_LANGUAGE_HINT: auto
+EXPECTED_SOURCE_LANGUAGE: auto
+HANDWRITING_MODELS:
+  en: microsoft/trocr-base-handwritten
+  hi: null
+  pa: null
+# HTR providers must transcribe the source script; direct image-to-English
+# providers are intentionally unsupported. Configure a verified line-level
+# Gurmukhi sequence model below when one is available to your deployment.
+HTR_PROVIDERS:
+  - provider_id: english_trocr
+    backend: transformers_vision_encoder_decoder
+    model_id: microsoft/trocr-base-handwritten
+    supported_languages: [en]
+    supported_scripts: [latin]
+    confidence_capability: sequence_probability
+    handwriting_validated: true
+  - provider_id: gurmukhi_htr
+    backend: transformers_vision_encoder_decoder
+    model_id: null
+    supported_languages: [pa]
+    supported_scripts: [gurmukhi]
+    confidence_capability: sequence_probability
+    handwriting_validated: false
+  - provider_id: devanagari_htr
+    backend: transformers_vision_encoder_decoder
+    model_id: null
+    supported_languages: [hi]
+    supported_scripts: [devanagari]
+    confidence_capability: sequence_probability
+    handwriting_validated: false
+# A validated bundle installed by training/gurmukhi_htr/install_model.py is
+# discovered here automatically; no production YAML edit is required.
+LOCAL_HTR_MODEL_DIRECTORY: .runtime/models
+MAX_PREVIEW_PAGES: 8
+MIN_REGION_AREA: 180
+MIN_REGION_WIDTH: 28
+MIN_REGION_HEIGHT: 9
+MIN_OCR_CHARACTER_COUNT: 3
+MIN_SOURCE_LETTER_COUNT: 4
+MIN_TEXT_QUALITY_SCORE: 0.48
+MIN_SOURCE_SCRIPT_RATIO: 0.55
+RECONSTRUCTION_MIN_READABLE_RATIO: 0.72
+CATASTROPHIC_UNREADABLE_RATIO: 0.60
+HANDWRITING_PAGE_THRESHOLD: 0.55
+VISUAL_SCRIPT_MIN_CONFIDENCE: 0.52
+VISUAL_INDIC_HEADLINE_THRESHOLD: 0.30
+HANDWRITING_HEAVY_THRESHOLD: 0.58
+BORDER_NOISE_MAX_FRACTION: 0.18
+REGION_MERGE_HORIZONTAL_GAP_RATIO: 2.5
+REGION_MERGE_VERTICAL_OVERLAP: 0.30
+PARAGRAPH_LINE_GAP_RATIO: 1.65
+BACKGROUND_RELIABILITY_THRESHOLD: 0.72
+ENABLE_TABLE_DETECTION: true
+DOCUMENT_DOMAIN: auto

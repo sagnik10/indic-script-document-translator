@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.1",
+  "input_document": "tmp\\scanned_pdf_check\\source.pdf",
+  "input_image": "tmp\\scanned_pdf_check\\source.pdf",
+  "output_directory": "tmp\\scanned_pdf_check\\output_psm3",
+  "inference_only": true,
+  "models": {
+    "detector": {
+      "id": "surya.detection.DetectionPredictor",
+      "loaded": false
+    },
+    "hindi": {
+      "id": "paudelanil/trocr-devanagari-2",
+      "primary_id": "paudelanil/trocr-devanagari-2",
+      "loaded": false,
+      "fallback": false
+    },
+    "gurmukhi": {
+      "id": "datalab-to/surya-ocr-2",
+      "primary_id": "datalab-to/surya-ocr-2",
+      "loaded": false,
+      "fallback": true,
+      "fallback_reason": "no verified dedicated line-level Gurmukhi handwriting checkpoint"
+    },
+    "translation": {
+      "id": "facebook/nllb-200-distilled-600M",
+      "loaded": false
+    },
+    "processing": {
+      "mode": "fast_document",
+      "pdf_render_dpi": 150,
+      "large_handwriting_model_loaded": false
+    }
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "route": "scanned_tesseract",
+      "line_count": 3,
+      "width": 1355,
+      "height": 1875
+    }
+  ],
+  "lines": [
+    {
+      "line": 1,
+      "bbox": [
+        75,
+        167,
+        986,
+        213
+      ],
+      "crop_file": "line_crops/page_001_line_001.jpg",
+      "detection_confidence": 0.9566666666666667,
+      "detector": "tesseract_pdf_fast",
+      "script": "unknown",
+      "text": "SCANNED GOVERNMENT LETTER",
+      "script_purity": 1.0,
+      "confidence": 0.9566666666666667,
+      "text_quality": 0.9848333333333333,
+      "recognition_model": "tesseract:pan+hin+eng",
+      "provider_kind": "tesseract_pdf_fast",
+      "accepted": true,
+      "review_required": false,
+      "review_reasons": [],
+      "english": "SCANNED GOVERNMENT LETTER",
+      "translation_status": "preserved_english",
+      "translation_error": null,
+      "candidates": [],
+      "page_number": 1
+    },
+    {
+      "line": 2,
+      "bbox": [
+        96,
+        356,
+        784,
+        410
+      ],
+      "crop_file": "line_crops/page_001_line_002.jpg",
+      "detection_confidence": 0.942,
+      "detector": "tesseract_pdf_fast",
+      "script": "unknown",
+      "text": "Reference No. 12345 / 2026",
+      "script_purity": 1.0,
+      "confidence": 0.942,
+      "text_quality": 0.9797,
+      "recognition_model": "tesseract:pan+hin+eng",
+      "provider_kind": "tesseract_pdf_fast",
+      "accepted": true,
+      "review_required": false,
+      "review_reasons": [],
+      "english": "Reference No. 12345 / 2026",
+      "translation_status": "preserved_english",
+      "translation_error": null,
+      "candidates": [],
+      "page_number": 1
+    },
+    {
+      "line": 3,
+      "bbox": [
+        92,
+        548,
+        836,
+        598
+      ],
+      "crop_file": "line_crops/page_001_line_003.jpg",
+      "detection_confidence": 0.96,
+      "detector": "tesseract_pdf_fast",
+      "script": "unknown",
+      "text": "This page uses raster text only.",
+      "script_purity": 1.0,
+      "confidence": 0.96,
+      "text_quality": 0.986,
+      "recognition_model": "tesseract:pan+hin+eng",
+      "provider_kind": "tesseract_pdf_fast",
+      "accepted": true,
+      "review_required": false,
+      "review_reasons": [],
+      "english": "This page uses raster text only.",
+      "translation_status": "preserved_english",
+      "translation_error": null,
+      "candidates": [],
+      "page_number": 1
+    }
+  ],
+  "transcription": "SCANNED GOVERNMENT LETTER\nReference No. 12345 / 2026\nThis page uses raster text only.",
+  "english_translation": "SCANNED GOVERNMENT LETTER\nReference No. 12345 / 2026\nThis page uses raster text only.",
+  "primary_output": "translated_en.docx",
+  "timings_seconds": {
+    "translation": 6.000000212225132e-06,
+    "total": 4.296037699999943
+  },
+  "accuracy_warning": "Tesseract handwriting OCR is probabilistic; review uncertain lines."
+}

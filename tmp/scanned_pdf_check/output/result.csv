@@ -1,0 +1,4 @@
+﻿page_number,line,bbox,script,text,script_purity,confidence,text_quality,recognition_model,provider_kind,accepted,review_required,review_reasons,english,translation_status,translation_error,crop_file
+1,1,"[75, 167, 986, 213]",unknown,SCANNED GOVERNMENT LETTER,1.0,0.96,0.986,tesseract:pan+hin+eng,tesseract_pdf_fast,True,False,,SCANNED GOVERNMENT LETTER,preserved_english,,line_crops/page_001_line_001.jpg
+1,2,"[96, 356, 784, 410]",unknown,Reference No. 12345 / 2026,1.0,0.942,0.9797,tesseract:pan+hin+eng,tesseract_pdf_fast,True,False,,Reference No. 12345 / 2026,preserved_english,,line_crops/page_001_line_002.jpg
+1,3,"[92, 548, 836, 598]",unknown,This page uses raster text only.,1.0,0.96,0.986,tesseract:pan+hin+eng,tesseract_pdf_fast,True,False,,This page uses raster text only.,preserved_english,,line_crops/page_001_line_003.jpg

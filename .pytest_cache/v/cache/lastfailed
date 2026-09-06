@@ -1,0 +1,8 @@
+{
+  "tests/test_strict_source_gating.py::test_unsupported_gurmukhi_handwriting_contributes_page_script_without_marker_text": true,
+  "tests/test_pdf_reconstruction_integration.py::test_pdf_reconstruction_replaces_region_with_searchable_text": true,
+  "tests/test_pdf_reconstruction_integration.py::test_critical_stamp_overlap_forces_overlay_and_preserves_source": true,
+  "tests/test_pdf_reconstruction_integration.py::test_overlay_reconstruction_handles_region_touching_page_edges": true,
+  "tests/test_pretrained_streamlit_app.py::test_uploaded_page_exposes_fast_mode_and_full_page_action": true,
+  "tests/test_pretrained_page_ocr.py::test_context_units_group_only_adjacent_validated_scan_lines": true
+}

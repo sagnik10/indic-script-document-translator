@@ -1,3 +1,18 @@
+<!-- SAGNIK10-STYLE-HEADER -->
+<div align="center">
+  <a href="https://github.com/sagnik10"><img src="https://img.shields.io/badge/Sagnik_Sen-AI%20%26%20Multimodal-275cce?style=flat-square" alt="Category" /></a>
+  <img src="https://img.shields.io/badge/Stack-Python-192a43?style=flat-square" alt="Stack" />
+  <img src="https://img.shields.io/badge/License-MIT-54647a?style=flat-square" alt="License" />
+</div>
+
+<p align="center">
+  <a href="https://sagnik10.github.io/SagnikSenPortfolio/">Portfolio</a> ·
+  <a href="https://github.com/sagnik10">GitHub Profile</a> ·
+  <a href="https://github.com/sagnik10/sagnik-sen-antigravity-plugin">Antigravity Plugin</a>
+</p>
+
+---
+<!-- /SAGNIK10-STYLE-HEADER -->
 # Difficult-Document Punjabi/Hindi Translator
 
 A modular Python 3.11+ Streamlit application for local extraction, review, English translation, and format-preserving reconstruction of native PDFs, degraded scans, photocopies, mobile photographs, and DOCX files. Punjabi Gurmukhi and Hindi Devanagari are the priority source languages; existing English and structured identifiers are preserved.
@@ -423,3 +438,13 @@ Absent private fixtures are skipped. Tests never insert fake OCR text to simulat
 **Mobile photo crops content**: select `clean_scan` or `photocopy` to disable perspective crop for that page, then recapture with the entire page border visible if possible.
 
 **A region remains untranslated in the primary document**: inspect its diagnostic reason. The source reading may have failed validation, HTR may be unavailable, the region may overlap protected graphics, or the English text may not fit without collision. Confirm/correct a credible Punjabi/Hindi source reading in review mode where appropriate; otherwise the original pixels intentionally remain unchanged.
+
+
+<!-- SAGNIK10-STYLE-FOOTER -->
+---
+<p align="center">
+  Maintained by <a href="https://github.com/sagnik10"><strong>Sagnik Sen</strong></a> ·
+  <a href="https://sagnik10.github.io/SagnikSenPortfolio/">Portfolio &amp; 1-on-1 Teaching</a> ·
+  <a href="https://www.linkedin.com/in/sagnik-sen-0a70431a8/">LinkedIn</a>
+</p>
+<!-- /SAGNIK10-STYLE-FOOTER -->

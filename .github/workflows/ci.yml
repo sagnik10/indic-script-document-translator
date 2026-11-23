@@ -19,4 +19,4 @@ jobs:
           python-version: '3.11'
 
       - name: Verify Python syntax
-        run: python -m compileall -q .
+        run: python -m compileall -q -x '(\.git|\.venv|venv|opensees39|site-packages|node_modules)' .
